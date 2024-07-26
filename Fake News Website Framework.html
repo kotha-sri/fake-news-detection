@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .TR{background-color: #444;}
+      .draco{color: white !important; scroll-behavior: smooth;}
+      .draco:hover{color: #1abc9c !important;}
+      .g502{background-color: #1abc9c; padding-left: 0px; padding-right: 0px;}
+      #tomcat{padding-top: 40px;}
+      .chiron{padding-top: 20px;}
+      .falltolight{font-size: 50px; color: white;}
+      #obj268{padding-top: 5px; color: white; font-size: 30px;}
+      .brian{color: #444444;}
+      #now{padding-top: 70px;}
+      #letsgo{font-size: 50px;}
+      .scramjet{background-color: #333; color: white;}
+      .scramjet:hover{color: white; background-color: #222;}
+      .cars{text-align: center !important;}
+      #thunderbolt{width: 100%; border: 0px; border-radius: 10px; padding-left: 0px;}
+      .lightspeed{width: 100%;}
+      .veyron{width: 99%; }
+      .egoista{width: 101.5%;}
+      .valkyrie{width: 99.5%;}
+      #MAX{width: 98.8%;}
+      #jumbojet{width: 96.5%;}
+      #delta1{width: 105.5%;}
+      #delta2{width: 96.8%;}
+      #seven{width: 108.3%;}
+      #dreamliner{width: 99.8%;}
+      #A350{width: 99.8%;}
+      #concorde{width: 97.5%;}
+      #comet{width: 99.2%;}
+      #hellcat{width: 110%;}
+      #B-17{width: 107.5%;}
+      #B-29{width: 101.75%;}
+      #fw{width: 99.8%;}
+      #zero{width: 100.2%}
+      #mig{width: 95.5%;}
+      #lightning2{width: 107.5%;}
+      #eurofighter{width: 97.5%;}
+      #spirit{width: 112.5%;}
+      #sukhoi{width: 112.5%;}
+      #Eagle{width: 96.5%;}
+      #F-16{width: 101.25%;}
+      #hawk{width: 106%;}
+      #apache{width: 100%;}
+      #chinook{width: 98.75%;}
+      #osprey{width: 102.75%;}
+      #f4u{width: 96.5%;}
+      #N1K2-J{width: 111.75%;}
+      #thunderstorm{width: 100%; border: 0px; border-radius: 10px; padding-left: 0px;}
+      .turbojet{background-color: #333; color: white;}
+      .turbojet:hover{color: white; background-color: #222;}
+      #T-34-85{width: 101.75%;}
+      #IS-3{width: 100%;}
+      #M60{width: 107.25%;}
+      #amx30b{width: 96%;}
+      #vanguard{width: 93.25%;}
+      #ohio{width: 105%;}
+      #akula{width: 100.5%;}
+      #midway{width: 113.75%;}
+      #french{width: 94.75%;}
+      #esa{width: 93.5%;}
+      #dragon2{width: 100%;}
+      #roadster{width: 100.75%;}
+      #carousel-item2{width: 56.25%;}
+      #HAI{width: 54.7%;}
+      .ISS{background-color: #333;}
+      #user{width: 101.5%;}
+      #sexy{padding-bottom: 100px;}
+      #about{background-color: #1abc9c; color: white;}
+      #thunderer{padding-top: 70px;}
+      #aboutme{padding-bottom: 70px;}
+      .dambusters{visibility: hidden; display: none;}
+      .bearcat{margin-bottom: 80px; margin-top: 80px;}
+      #vampire{background-color:#13D6CD; color: white; border-radius: 0px; margin-bottom: 30px; border: 1px solid white;}
+      #vampire:hover{border: 1px solid #333; background-color: white; color: #333;}
+      #contact{background-color: #1abc9c; color: white;}
+      #contact1{padding-top: 80px;}
+      .actionx{background-color: #f8f9fa;}
+      .falcon{padding-right: 30px;}
+      .mil-falcon{float: right;}
+      .phantom{padding-top: 30px;}
+      #facebook{height: 50px;}
+      #twitter{height: 50px; width: 50px;}
+      #instagram{height: 50px; width: 50px;}
+      .stargirl{padding-bottom: 30px;}
+      .starboy{padding-top: 30px; padding-bottom: 80px;}
+      .A380{font-size: 20px;}
+      #morepls{height: 50px; width: 150px; border: 1px solid white; background-color: #1abc9c; border-radius: 30px; color: white;}
+      #morepls:hover{background-color: white; color: #333; border: 1px solid #1abc9c;}
+      .UI{width: 350px; height: 350px; margin-top: 180px;}
+      .gizmo{font-size: 50px; color: white; text-align: center !important; display: block; margin: auto;}
+      #proton{width: 97.25%;}
+      #shit{width: 90%;}
+      #fuck{width: 96%;}
+      #ARK2{width: 99.25%;}
+      #mc1{width: 97.5%;}
+      #mc3{width: 98.25%;}
+      #MSFS{width: 104.5%;}
+      #MSFS5{width: 100.5%;}
+      #TK1{width: 100.1%;}
+      #TK2{width: 98.5%;}
+      #TK3{width: 99.5%;}
+      .phantom{margin-right: 0px;}
+      .haha{padding-left: 50px;}
+      .omg{padding-top: 80px;}
+      .kfc{padding-top: 80px;}
+      .c418{padding-top: 50px;}
+      .wildcat{margin-bottom: 80px; margin-top: 0px;}
+      #amx50{border: 1px solid white; background-color: #1abc9c; border-radius: 30px; color: white; text-align: center; display: block; margin: auto;}
+      #amx50:hover{background-color: white; color: #333; border: 1px solid #1abc9c;}
+      #profile-picture{width: 350px; height: 350px;}
+      .arl44{padding-left: 15%; padding-right: 15%;}
+      #il2{width: 101.25%;}
+      #hind{width: 96.25%;}
+      #knights{width: 98%;}
+      #panzer{width: 100.75%;}
+      .admin{height: 60px; width: 180px; border: 1px solid white; background-color: #1abc9c; border-radius: 30px; color: white; margin-bottom: 50px}
+      .admin:hover{background-color: white; color: #333; border: 1px solid #1abc9c;}
+      .lang{color: white; font-size: 20px;}
+      .lang:hover{color: crimson; text-decoration: none;}
+      #noob{height: 40px; width: 120px; border: 1px solid white; background-color: #1abc9c; border-radius: 30px; color: white; margin-bottom: 20px}
+      #noob:hover{background-color: white; color: #333; border: 1px solid #1abc9c;}
+      #bell{width: 97%;}
+      #B707{width: 99.75%;}
+      #rockwell{width: 10%;}
+      #buran{width: 106.5%;}
+      #cobra{width: 93.75%;}
+      #kitty{width: 96.5%;}
+      #wk1{width: 99.5%;}
+      #SSO{width: 100.75%;}
+      #SST{width: 105.5%;}
+      
+      body::-webkit-scrollbar{display: none;}
+
+
+      @media screen and (max-width: 980px) {
+          .phantom{text-align: center;}
+          .mil-falcon{text-align: center; float: none;}
+          .barrett{padding-left: 50px;}
+      }
+      
+
+      @media screen and (max-width: 768px) {
+          .dambusters{visibility: visible; display: block;}
+          .sq617{display: none;}
+          .phantom{text-align: center;}
+          .arl44{padding-left: 0%; padding-right: 0%;}
+          .ramjet{display: none;}
+          .kfc{padding-top: 10px;}
+          .c418{padding-top: 0px; margin-top: 0px;}
+          #profile-picture{margin-top: 30px;}
+      }
+
+  </style>
+  <title>My Family</title>
+  </head>
+  <body>
+      <!--Nav Bar Start-->
+        <div id="why" class="container-fluid mx-auto">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top TR">
+                <a class="navbar-brand draco" href="#" ><h3>Fake News Detection</h3></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hello">    
+                    <span class="navbar-toggler-icon TR text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="hello">
+
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link draco" href="#portfolio"><h5>Portfolio</h5></a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link draco" href="#about"><h5>About Me</h5></a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link draco" href="#family"><h5>Family & Friends</h5></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link draco" href="#contact"><h5>Contact</h5></a>
+                    </li>
+                </ul>
+
+
+            </nav>
+            </div>
+            <br>
+            <br>
+            <!--Nav Bar End-->
+
+           <!--Fake News Detection Start-->
+           <div id="contact" class="container-fluid">
+            <div class="container arl44">
+            <h1 id="contact1" class="text-center">Is your news source Fact or Fiction?</h1>
+            <br>
+            <span class="material-icons gizmo">
+                star
+            </span>
+            <br>
+            <br>
+
+                  <div class="form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Input link here" type="text" required>
+                  </div>
+                  <br>
+
+                  <div class="text-center">
+                    <button id="vampire" class="btn btn-block" type="submit">Send</button>
+
+                    <br>
+                    <div class="collapse text-center" id="rslash">
+                        <i></i>
+                    </div>
+    
+                  <div class="form-group">
+                    <h2 id="Fake-News-Output" class = "gizmo"></h2>
+                    <script>
+                        document.getElementById("Fake-News-Output").innerHTML = 3 + 6;
+                        </script>
+                  </div>
+                  
+                <br>
+                <br>
+
+</div>
+                </div>
+              </div>
+              <!--Fake News Detection End-->
+
+            <!--Alternate Resources Start-->
+            <!--You can put other news resources here. Maybe link articles that are relevant-->
+            <!--You can use the carousel if you like or delete it. Maybe arranging each carousel as 1 single news org like the BBC-->
+            <div id="portfolio" class="container-fluid text-center">
+                <h1 id="now" class="brian">Alternate Resources</h1>
+
+                <span id="letsgo" class="material-icons brian">
+                    star
+                 </span>
+                </div>
+                <br>
+
+                <div id="skyhawk" class="shootingstar container-fluid">
+
+                    <div class="row">
+                        <!--Cars Start-->
+                        <div id="s" class="col-md-4 col-sm-12"> 
+                    <button class="btn" id="artemis" data-toggle="modal" data-target="#B747-8">
+                        <img id="thunderbolt" src="Jesko.jpg">
+                    </button>
+
+                    <div id="B747-8" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+            
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title w-100 text-center cars">My favorite cars!
+
+                            </div>
+                            <div class="modal-body">
+                                <div id="demo" class="carousel slide">
+                                    <ul class="carousel-indicators">
+                                        <li class="B787" data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li class="B787" data-target="#demo" data-slide-to="1"></li>
+                                        <li class="B787" data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+
+                                    <div class="carousel-inner">
+
+                    <div class="carousel-item active mustang text-center">
+                        <img class="lightspeed" src="Jesko.jpg">
+                        <div class="carousel-caption">
+                                <h4 class="ramjet">Koenigsegg Jesko</h4>
+                                <p class="ramjet"></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item mustang text-center">
+                        <img class="lightspeed" src="One to 1.jpg">
+                        <div class="carousel-caption">
+                                <h4 class="ramjet">Koenigsegg One:1</h4>
+                                <p class="ramjet"></p>
+                        </div>
+                    </div>
+
+                    
+                    
+                                    </div>
+
+                                    <a class="carousel-control-prev B777x" href="#demo" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                      </a>
+                                      <a class="carousel-control-next B777x" href="#demo" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                      </a>
+
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-block scramjet" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+
+                          </div>
+                          </div>
+                          </div>
+                          <!--Cars End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <!--Planes Start-->
+                          <div id="e" class="col-md-4 col-sm-12"> 
+                            <button class="btn" id="sonata" data-toggle="modal" data-target="#B747-8F">
+                                <img id="thunderbolt" src="L1011 TriStar.jpg">
+                            </button>
+        
+                            <div id="B747-8F" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                    
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h2 class="modal-title w-100 text-center plane">My favorite planes!
+        
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="demo1" class="carousel slide">
+                                            <ul class="carousel-indicators">
+                                                <li class="B787" data-target="#demo1" data-slide-to="0" class="active"></li>
+                                                <li class="B787" data-target="#demo1" data-slide-to="1"></li>
+                                                <li class="B787" data-target="#demo1" data-slide-to="2"></li>
+                                            </ul>
+        
+                                            <div class="carousel-inner">
+
+                            <div class="carousel-item active mustang text-center">
+                                <img class="lightspeed" id="A320neo" src="L1011 TriStar.jpg">
+                                <div class="carousel-caption">
+                                        <h4 class="ramjet">Lockheed L-1011 TriStar</h4>
+                                        <p class="ramjet"></p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item mustang text-center">
+                                <img class="lightspeed" id="A320neo" src="MD 11.jpg">
+                                <div class="carousel-caption">
+                                        <h4 class="ramjet">McDonnell Douglas MD-11</h4>
+                                        <p class="ramjet"></p>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item mustang text-center">
+                                <img class="lightspeed" id="A320neo" src="SR-71.jpg">
+                                <div class="carousel-caption">
+                                        <h4 class="ramjet">Lockheed SR-71 Blackbird</h4>
+                                        <p class="ramjet"></p>
+                                </div>
+                            </div>
+
+        
+                            
+                                            </div>
+        
+                                            <a class="carousel-control-prev B777x" href="#demo1" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                              </a>
+                                              <a class="carousel-control-next B777x" href="#demo1" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                              </a>
+        
+                                        </div>
+                                    </div>
+        
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-block scramjet" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+        
+                                  </div>
+                                  </div>
+                                  </div>
+                                  <!--Planes End-->
+
+
+
+
+
+
+
+
+
+
+                                  <!--War Machines Start-->
+                                  <div id="e" class="col-md-4 col-sm-12"> 
+                                    <button class="btn" id="sonata" data-toggle="modal" data-target="#B747-8I">
+                                        <img id="thunderbolt" src="Tiger 131.jpg">
+                                    </button>
+                
+                                    <div id="B747-8I" class="modal fade" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                            
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h2 class="modal-title w-100 text-center plane">My favorite war machines!
+                
+                                            </div>
+                                            <div class="modal-body">
+                                                <div id="demo2" class="carousel slide">
+                                                    <ul class="carousel-indicators">
+                                                        <li class="B787" data-target="#demo2" data-slide-to="0" class="active"></li>
+                                                        <li class="B787" data-target="#demo2" data-slide-to="1"></li>
+                                                        <li class="B787" data-target="#demo2" data-slide-to="2"></li>
+                                                    </ul>
+                
+                                                    <div class="carousel-inner">
+                
+                                    <div class="carousel-item active mustang text-center">
+                                        <img class="lightspeed" id="" src="Tiger 131.jpg">
+                                        <div class="carousel-caption">
+                                                <h4 class="ramjet">Panzerkampfwagen VI Tiger Ausf. H1 (Tiger I)</h4>
+                                                <p class="ramjet"></p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="carousel-item mustang text-center">
+                                        <img class="lightspeed" id="" src="Tiger 2 Savage.jpg">
+                                        <div class="carousel-caption">
+                                                <h4 class="ramjet">Panzerkampfwagen Tiger Ausf. B (Tiger II)</h4>
+                                                <p class="ramjet">King Tiger</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+
+        
+        
+                
+                                    
+                                                    </div>
+                
+                                                    <a class="carousel-control-prev B777x" href="#demo2" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"></span>
+                                                      </a>
+                                                      <a class="carousel-control-next B777x" href="#demo2" data-slide="next">
+                                                        <span class="carousel-control-next-icon"></span>
+                                                      </a>
+                
+                                                </div>
+                                            </div>
+                
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-block scramjet" data-dismiss="modal">Close</button>
+                                            </div>
+                                          </div>
+                
+                                          </div>
+                                          </div>
+                                          </div>
+                                          <!--War Machines End-->
+                          
+                </div>
+
+
+
+                <div class="row">
+                    
+
+
+                    <!--Rockets Start-->
+                    <div id="x" class="col-md-4 col-sm-12"> 
+                        <button class="btn" id="rocketship" data-toggle="modal" data-target="#dragon">
+                            <img id="thunderbolt" src="Space Shuttle.jpg">
+                        </button>
+    
+                        <div id="dragon" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h2 class="modal-title w-100 text-center plane">My favorite rockets!
+    
+                                </div>
+                                <div class="modal-body">
+                                    <div id="demo3" class="carousel slide">
+                                        <ul class="carousel-indicators">
+                                            <li class="B787" data-target="#demo3" data-slide-to="0" class="active"></li>
+                                            <li class="B787" data-target="#demo3" data-slide-to="1"></li>
+                                            <li class="B787" data-target="#demo3" data-slide-to="2"></li>
+                                        </ul>
+    
+                                        <div class="carousel-inner">
+    
+                        <div class="carousel-item active mustang text-center">
+                            <img class="lightspeed" id="" src="Space Shuttle.jpg">
+                            <div class="carousel-caption">
+                                    <h4 class="ramjet">NASA Space Shuttle</h4>
+                                    <p class="ramjet"></p>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item mustang text-center text-center">
+                            <img class="lightspeed" id="" src="Falcon 9.jpg">
+                            <div class="carousel-caption">
+                                    <h4 class="ramjet">SpaceX Falcon 9</h4>
+                                    <p class="ramjet"></p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item mustang text-center">
+                            <img class="lightspeed" id="" src="Falcon Heavy.jpg">
+                            <div class="carousel-caption">
+                                    <h4 class="ramjet">SpaceX Falcon Heavy</h4>
+                                    <p class="ramjet"></p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item mustang text-center">
+                            <img class="lightspeed" id="dragon2" src="Dragon Capsule.jpg">
+                            <div class="carousel-caption">
+                                    <h4 class="ramjet">Dragon Capsule</h4>
+                                    <p class="ramjet"></p>
+                            </div>
+                        </div>
+
+
+                                        </div>
+    
+                                        <a class="carousel-control-prev B777x" href="#demo3" data-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                          </a>
+                                          <a class="carousel-control-next B777x" href="#demo3" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                          </a>
+    
+                                    </div>
+                                </div>
+    
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-block scramjet" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+    
+                              </div>
+                              </div>
+                              </div>
+                              <!--Rockets End-->
+
+
+
+
+
+                              <!--Youtubers Start-->
+                              <div id="x" class="col-md-4 col-sm-12"> 
+                                <button class="btn" id="rocketship" data-toggle="modal" data-target="#youtube">
+                                    <img id="thunderbolt" src="Captain The Mighty Jingles.jpg">
+                                </button>
+            
+                                <div id="youtube" class="modal fade" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                        
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h2 class="modal-title w-100 text-center plane">My favorite YouTubers!
+            
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="demo4" class="carousel slide">
+                                                <ul class="carousel-indicators">
+                                                    <li class="B787" data-target="#demo4" data-slide-to="0" class="active"></li>
+                                                    <li class="B787" data-target="#demo4" data-slide-to="1"></li>
+                                                    <li class="B787" data-target="#demo4" data-slide-to="2"></li>
+                                                </ul>
+            
+                                                <div class="carousel-inner">
+            
+                                <div class="carousel-item active mustang text-center">
+                                    <img class="lightspeed" id="" src="Captain The Mighty Jingles.jpg">
+                                    <div class="carousel-caption">
+                                            <h4 class="ramjet"></h4>
+                                            <p class="ramjet"></p>
+                                    </div>
+                                </div>
+
+                                
+        
+                                <div class="carousel-item mustang text-center">
+                                    <img class="lightspeed" id="carousel-item2" src="The Flight Channel logo.jpg">
+                                    <div class="carousel-caption">
+                                            <h4 class="ramjet"></h4>
+                                            <p class="ramjet"></p>
+                                    </div>
+                                </div>
+        
+                                                </div>
+            
+                                                <a class="carousel-control-prev B777x" href="#demo4" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                  </a>
+                                                  <a class="carousel-control-next B777x" href="#demo4" data-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                  </a>
+            
+                                            </div>
+                                        </div>
+            
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-block scramjet" data-dismiss="modal">Close</button>
+                                        </div>
+                                      </div>
+            
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <!--Youtubers End-->
+
+
+
+
+
+
+
+
+
+
+
+
+                                      <!--Games Start-->
+                                      <div id="sexy" class="col-md-4 col-sm-12"> 
+                                        <button class="btn" id="sonata" data-toggle="modal" data-target="#games">
+                                            <img id="thunderbolt" src="Action X.jpg">
+                                        </button>
+                    
+                                        <div id="games" class="modal fade" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h2 class="modal-title w-100 text-center games">My favorite games!
+                    
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="demo5" class="carousel slide">
+                                                        <ul class="carousel-indicators">
+                                                            <li class="B787" data-target="#demo5" data-slide-to="0" class="active"></li>
+                                                            <li class="B787" data-target="#demo5" data-slide-to="1"></li>
+                                                            <li class="B787" data-target="#demo5" data-slide-to="2"></li>
+                                                        </ul>
+                    
+                                                        <div class="carousel-inner">
+                    
+                                        <div class="carousel-item active mustang text-center">
+                                            <img class="lightspeed" id="" src="Action X.jpg">
+                                            <div class="carousel-caption">
+                                                    <h4 class="ramjet"></h4>
+                                                    <p class="ramjet"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item mustang text-center">
+                                            <img class="lightspeed" id="" src="Super Conqueror.jpg">
+                                            <div class="carousel-caption">
+                                                    <h4 class="ramjet"></h4>
+                                                    <p class="ramjet"></p>
+                                            </div>
+                                        </div>
+
+                                        
+
+                                                        </div>
+                    
+                                                        <a class="carousel-control-prev B777x" href="#demo5" data-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                          </a>
+                                                          <a class="carousel-control-next B777x" href="#demo5" data-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                          </a>
+                    
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-block scramjet" data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                    
+                                              </div>
+                                              </div>
+                                              </div>
+                                              <!--Games End-->
+                </div>
+                </div>
+                <!--Alternative Resources End-->
+
+                <!--About Me Start-->
+                <div id="about" class="container-fluid text-center">
+                    <h1 id="thunderer">UTD Workshop Project</h1>
+                    <span class="material-icons falltolight">
+                        star
+                     </span>
+                     <br>
+                     <br>
+                     <div id="aboutme">
+                    <h5>This Project is about using algorithm to determine potential fake news</h5>
+                    <h5></h5>
+                    <h5></h5>
+                    <br>
+                    <button class="btn" type="button" id="morepls">Learn More!</button>
+                    </div>
+                </div>
+                <!--About Me End-->
+
+                <!--About Us-->
+                <div id="family" class="container-fluid text-center">
+                    <h1 id="now" class="">About the Authors</h1>
+
+                    <span id="letsgo" class="material-icons brian">
+                        star
+                     </span>
+
+
+<!--Srikar Start-->
+                    <div class="row c418">
+                        <div class="col-md-6 col-sm-12">
+                            <h2 class="omg">Srikar Kotha</h2>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+      
+                        <div class="col-md-6 col-sm-12">
+                            <img class="rounded-circle" id="profile-picture" src="">
+                      </div>
+                    </div>
+<!--Srikar End-->
+      
+<!--Soumith Start-->
+                    <div class="row kfc">
+                      <div class="col-md-6 col-sm-12 sq617">
+                        <img class="rounded-circle" id="profile-picture" src="">
+                    </div>
+      
+                      <div class="col-md-6 col-sm-12 ">
+                          <h2 class="omg">Soumith Reddy</h2>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                      </div>
+                </div>
+                <div class="col-md-6 col-sm-12 dambusters">
+                    <img class="rounded-circle" id="profile-picture" src="">
+                </div>
+<!--Soumith End-->
+
+<!--Chi Ming Start-->
+                <div class="row kfc">
+                  <div class="col-md-6 col-sm-12">
+                      <h2 class="omg">Chi Ming Fung</h2>
+                      <p>Front End developer </p>
+                      <p>HTML website developer</p>
+                      <p></p>
+                      <p></p>
+                  </div>
+      
+                  <div class="col-md-6 col-sm-12">
+                    <img class="rounded-circle" id="profile-picture" src="20231014_161433.jpg">
+                </div>
+<!--Chi Ming End-->
+              </div>
+              <button class="btn bearcat" type="button" id="morepls">Learn More!</button>
+                </div>
+                <!--About Us-->
+
+                <!--Contact Start-->
+                <div id="contact" class="container-fluid">
+                    <div class="container arl44">
+                    <h1 id="contact1" class="text-center">CONTACT</h1>
+                    <span class="material-icons gizmo">
+                        star
+                    </span>
+                    <br>
+
+                          <div class="form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                          </div>
+                          <br>
+            
+                          <div id="thunderbird" class="form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                          </div>
+                          <br>
+
+                            <div class="form-group">
+                              <input class="form-control" id="name" name="name" placeholder="Phone Number" type="tel" required>
+                            </div>
+                            <br>
+            
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea>
+                        <br>
+                        <br>
+<div class="text-center">
+                            <button id="vampire" class="btn btn-block" type="submit">Send</button>
+
+                            <button id="amx50" class="btn" type="button" data-toggle="collapse" data-target="#gmail">Wanna directly email me instead?</button>
+                            <br>
+                            <div class="collapse text-center" id="gmail">
+                                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                                    <img id="rockwell" src="Gmail logo.png">
+                                    </a>
+                                    <br>
+                                    <br>
+                            </div>
+
+                            
+                            <br>
+                            <div class="collapse text-center" id="rslash">
+                                <i></i>
+                            </div>
+</div>
+                        </div>
+                      </div>
+                      <!--Contact End-->
+
+                      <!--Bottom Start-->
+                      <div class="container-fluid actionx">
+                        <div class="container-fluid phantom row">
+                            <div class="col-lg-6 col-md-12 haha">
+                          <span class="falcon">
+                            <a class="heavy" href="#">About</a>
+                          </span>
+            
+                          <span class="falcon">
+                            <a class="heavy" href="#contact">Contact</a>
+                          </span>
+            
+                          <span class="falcon">
+                            <a class="heavy" href="#">Terms of Use</a>
+                          </span>
+            
+                          <span class="">
+                            <a class="heavy" href="#">Privacy Policy</a>
+                          </span>
+
+                          <div class="stargirl">
+                            <span>
+                            &copy; Fake News Website Project - 2024
+                            </span>
+          
+                          </div>
+                          </div>
+
+                          <div class="col-lg-6 col-md-12 links ">
+                          <span class="falcon mil-falcon">
+                            <a class="bfg barrett" href="https://www.youtube.com/" target="_blank">
+                              <img id="facebook" src="Youtube icon.png">
+                            </a>
+                          </span>
+            
+                          <span class="falcon mil-falcon">
+                            <a class="bfg" href="https://twitter.com/MingNo7" target="_blank">
+                              <img id="twitter" src="Twitter icon.png">
+                            </a>
+                          </span>
+            
+                          <span class="falcon mil-falcon">
+                            <a class="bfg" href="https://www.facebook.com/" target="_blank">
+                              <img id="instagram" src="Facebook icon.png">
+                            </a>
+                          </span>
+                          </div>
+            
+                        </div>
+                      </div>
+                      <!--Bottom End-->
+
+
+
+  </body>
+  </html>
