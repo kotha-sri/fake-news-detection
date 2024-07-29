@@ -42,13 +42,13 @@ y = welfake['label']
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
-vectroizer = TfidfVectorizer(stop_words='english')
+vectroizer = TfidfVectorizer(stop_words='english', binary=True)
 x_train = vectroizer.fit_transform(x_train)
 x_test = vectroizer.transform(x_test)
 
 # logistic regression model
 
-LR = LogisticRegression()
+LR = LogisticRegression(C=20, solver='liblinear', penalty='l2')
 LR.fit(x_train, y_train)
 
 print(LR.score(x_test, y_test))
