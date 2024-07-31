@@ -1,0 +1,107 @@
+body {
+    font-family: "Verdana";
+}
+
+#content { 
+    background-color: aliceblue;
+    text-align: center;
+    height: 95vh;
+    color: rgb(49, 86, 122);
+}
+
+#top {
+    margin: 0px;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+#disclaimer {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#disclaimer:hover {
+    cursor: pointer;    
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#url-input::placeholder {
+    color: rgb(49, 86, 122);
+}
+
+#url-input{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    margin: 0;
+    padding: 5px;
+    width: 50vw;
+    font-family: "Verdana";
+    font-size: 30px;
+    background-color: aliceblue;
+    border: 1px solid rgb(49, 86, 122);
+    border-radius: 10px;
+    color: rgb(49, 86, 122);
+}
+
+#detect-btn {
+    margin: 0;
+    padding: 5px;
+    font-family: "Verdana";
+    background-color: rgb(49, 86, 122);
+    border: 1px solid rgb(49, 86, 122);
+    border-radius: 10px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#detect-btn:hover {
+    cursor: pointer;
+    color: rgb(49, 86, 122);
+    background-color: aliceblue;
+}
+
+#pred-message {
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+#pred-prob {
+    font-size: 30px;
+}
+
+#bottom-bar {
+    background-color: rgb(49, 86, 122);
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    height: 5vh;
+}
+
+#bottom-content {
+    padding-top: 15px;
+}
+
+#title {
+    margin: 0px;
+    padding: 0px;
+}
+
+#github-img {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+#github-link {
+    height: 0px;
+    width: 0px;
+}
