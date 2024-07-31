@@ -4,6 +4,7 @@ import re
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+import joblib
 
 # welfake contains data from Kaggle, McIntire, Reuters, and Buzzfeed Political
 welfake = pd.read_csv('WELFake_Dataset (1).csv')
@@ -22,7 +23,7 @@ welfake.drop_duplicates(inplace=True)
 
 # preprocessing
 
-def wordopt(text):
+def clean(text):
     text = text.lower()
     text = re.sub('\[.*?\]', '', text) # anything in brackets
     text = re.sub("\\W"," ",text) # non-alphanumerics
@@ -36,19 +37,18 @@ def wordopt(text):
     text = anyascii(text)
     return text
 
-welfake['text'] = welfake['text'].apply(wordopt)
+welfake['text'] = welfake['text'].apply(clean)
 x = welfake['text']
 y = welfake['label']
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
-
 vectroizer = TfidfVectorizer(stop_words='english', binary=True)
-x_train = vectroizer.fit_transform(x_train)
-x_test = vectroizer.transform(x_test)
+x_train = vectroizer.fit_transform(x)
+
+joblib.dump(vectroizer, 'vectroizer.pkl')
 
 # logistic regression model
 
 LR = LogisticRegression(C=20, solver='liblinear', penalty='l2')
-LR.fit(x_train, y_train)
+LR.fit(x_train, y)
 
-print(LR.score(x_test, y_test))
+joblib.dump(LR, 'log_reg_model.pkl')
