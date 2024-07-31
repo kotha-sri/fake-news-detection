@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fake News Detection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static\styles\home.css">
+  <link rel="icon" type="image/x-icon" href="static\Add_a_heading-removebg-preview.png">
+</head>
+
+<body>
+
+  <div id="content">
+    <h1 id="top">Fake News Detector</h1>
+    <p id="disclaimer">DISCLAIMER</p>
+    <script>
+      document.getElementById("disclaimer").addEventListener('click', function () { alert("The model used to create the prediction may not be accurate for every website. \n\nDo not blindly trust what the output is, only use as a tool in assistance to check the validity of a website. \n\nThat being said, in training the model did have ~95% accuracy."); });
+    </script>
+    <div id="form">
+      <form action="{{ url_for("submitURL")}}" method="post" class=""form-group>
+          <input type="text" id="url-input" name="url" placeholder="Input website link here">
+          <button id="detect-btn" class="btn btn-outline-secondary" type="submit">Detect</button>
+      </form>
+    </div>
+
+    <!-- <form class="row g-3">
+      <div class="col-auto">
+        <input type="text" id="url-input" name="url" placeholder="Input website link here">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Detect</button>
+      </div>
+    </form> -->
+
+    <!-- <form class="row g-3" action="{{ url_for("submitURL")}}" method="post" class="form-group">
+      <div class="col-auto">
+        <input type="text" class="form-control" id="inputPassword2" placeholder="Input website link here">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Detect</button>
+      </div>
+    </form> -->
+
+    <div id="prediction-display">
+      <p id="pred-message">{{ message }}</p>
+      <p id="pred-prob">{{ prob }}</p>
+    </div>
+  </div>
+
+
+  <div id="bottom-bar">
+    <div id="bottom-content">
+      <span style="margin-top: 5px;">Model was trained on the <a target="_blank"
+          href="https://data.niaid.nih.gov/resources?id=zenodo_4561252" style="color: white;">WELFake</a> dataset</span>
+      <span> | </span>
+      <span>Made by Chi Ming Fung (frontend), Soumith Reddy (model training and optimization), and Srikar Kotha (model
+        training and api) <a target="_blank" href="https://github.com/logos" id="github-link"><img
+            src="{{url_for('static', filename='github-mark-white.png')}}" alt="github" id="github-img"></a></span>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
