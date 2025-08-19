@@ -1,5 +1,5 @@
 # Fake News Detection
-<img src="static/fake-news-logo" alt="logo" width="150"/>
+<img src="static/fake-news-logo" alt="logo" width="100"/>
 
 
 Final project for the Deep Dive Into AI summer program at the University of Texas at Dallas.
