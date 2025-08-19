@@ -1,7 +1,6 @@
 # Fake News Detection
 <img src="static/fake-news-logo" alt="logo" width="100"/>
 
-
 Final project for the Deep Dive Into AI summer program at the University of Texas at Dallas.
 
 The [WELFake Dataset](https://data.niaid.nih.gov/resources?id=zenodo_4561252) was used to train the model, made by combining the four most popular datasets (Kaggle, McIntire, Reuters, BuzzFeed Political).
